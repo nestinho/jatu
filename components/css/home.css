@@ -161,7 +161,7 @@
           padding: 5px 10px;
          }
 
-         .jatutalk-div  {
+         .jatutalk-div, .jatupesa-div, .jatumarket-div  {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -170,14 +170,14 @@
           margin-bottom: auto;
          }
 
-         .jatupesa-div, .jatumarket-div {
+        /* .jatupesa-div, .jatumarket-div {
           display: flex;
           flex-direction: row;
           justify-content: center;
           align-items: center;
           margin-top: auto;
           margin-bottom: auto;
-         }
+         } */
 
         .jatutalk-div-1 .jatumarket-div-1, .jatupesa-div-1 {
           width: 100%;
