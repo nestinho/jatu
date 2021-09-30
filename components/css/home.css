@@ -170,6 +170,11 @@
           margin-bottom: auto;
          }
 
+         .welcome-section {
+          width: 100%; 
+          height: 250px;
+         }
+
         /* .jatupesa-div, .jatumarket-div {
           display: flex;
           flex-direction: row;
@@ -273,10 +278,7 @@
                   }
                 }
 
-                .sect_color{
-                  background-color: #f1f2f6;
-                  padding: 20px 10px;
-                }
+            
 
                 /* Add a black background color to the top navigation */
                 .topnav {
@@ -569,6 +571,10 @@
                   .column5-1 {
                     width: 100%;
                   }
+                }
+
+                .partners {
+                  padding: 60px 30px;
                 }
 
 
