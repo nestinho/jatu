@@ -123,22 +123,76 @@
       box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     }
 
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  width: 120px;
+  height: 120px;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url(images/picha1.jpg);
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+
          </style>
   </head>
   <body>
     
     <header class="navheader">
-      <img src="images/logojatu.jpg" alt="logojatu" id="juulogo">
+      <img src="images/logo-jatu.png" alt="logojatu" id="juulogo"> 
       <h1 align="center" style="color: #ff6600;">JATU PLC</h1>
     <h5 align="center" style="color: #ff6600;">"Jenga Afya Tokomeza Umaskini"</h5>
       
 <div class="topnav" id="myTopnav">
   <a href="index.html">Home</a>
-  <a href="../about.html">About Us</a>
-  <a href="../services.html">Services</a>
-  <a href="../products.php">Products</a>
-  <a href="../muundo.html">Organization Structure</a>
-  <a href="../contact.html">Contact Us</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="products.html">Products</a>
+  <a href="muundo.html">Organization Structure</a>
+  <a href="contact.html">Contact Us</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -148,10 +202,10 @@
     
   <main class="content">
 
-  <section style="background-image: url(images/picha1.jpg); background-size: cover;">
+  <section style="background-image: url(images/picha1.jpg); background-size: cover;" class="bg-image">
    <div class="row" id="about-one">
     <h1>ABOUT US</h1>
-    <p>Jenga Afya Tokomeza Umaskini (JATU) PLC is a Tanzanian company registered as a public company (Public Limited Company) which connects farmers and enables them to modernize and after the harvesting the company buys all the produce and later prepares the products that are sold to JATU members through the online network marketing (network marketing).</p>
+    <p class="bg-text">Jenga Afya Tokomeza Umaskini (JATU) PLC is a Tanzanian company registered as a public company (Public Limited Company) which connects farmers and enables them to modernize and after the harvesting the company buys all the produce and later prepares the products that are sold to JATU members through the online network marketing (network marketing).</p>
    </div>
  </section>
 
@@ -179,31 +233,31 @@
      <div class="column3" >
        <div class="row">
        <div class="column3">
-        <i class="material-icons" style="font-size: 50px; color: orangered;">wc</i><br>UNITY
+        <i class="material-icons zoom" style="font-size: 50px; color: orangered; width: 100px; height: 100px;">wc</i><br>UNITY
       </div>
 
       <div class="column3">
-        <i class="material-icons" style="font-size: 50px; color: mediumseagreen;">work</i><br>DISCIPLINE
+        <i class="material-icons zoom" style="font-size: 50px; color: mediumseagreen;">work</i><br>DISCIPLINE
       </div>
       </div>
 
       <div class="row">
        <div class="column3">
-        <i class="material-icons" style="font-size: 50px; color: mediumseagreen;">family_restroom</i><br>TEAMWORK
+        <i class="material-icons zoom" style="font-size: 50px; color: mediumseagreen;" class="zoom">family_restroom</i><br>TEAMWORK
       </div>
 
       <div class="column3">
-        <i class="material-icons" style="font-size: 50px; color: orangered;">favorite</i><br>TRUST
+        <i class="material-icons zoom" style="font-size: 50px; color: orangered;" >favorite</i><br>TRUST
       </div>
       </div>
 
       <div class="row">
        <div class="column3">
-        <i class="material-icons" style="font-size: 50px; color: orangered;">badge</i><br>PROFESSIONALISM
+        <i class="material-icons zoom" style="font-size: 50px; color: orangered;" >badge</i><br>PROFESSIONALISM
       </div>
 
       <div class="column3">
-        <i class="material-icons" style="font-size: 50px; color: mediumseagreen;">volunteer_activism</i><br>DEDICATION
+        <i class="material-icons zoom" style="font-size: 50px; color: mediumseagreen;" >volunteer_activism</i><br>DEDICATION
       </div>
       </div>
      </div>
