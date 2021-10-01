@@ -165,72 +165,79 @@
 
             }
 
-          
-
-
-
-          .heading {
-  font-size: 15px;
-  margin-right: 25px;
+            /* Slideshow container */
+.slideshow-container-testimony {
+  position: relative;
+  background: #f1f1f1f1;
 }
 
-.fa-star {
-  font-size: 25px;
-}
-
-.checked {
-  color: orange;
-}
-
-/* Three column layout */
-.side {
-  float: left;
-  width: 15%;
-  margin-top:10px;
-}
-
-.middle {
-  margin-top:10px;
-  float: left;
-  width: 70%;
-}
-
-/* Place text to the right */
-.right {
-  text-align: right;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The bar container */
-.bar-container {
-  width: 100%;
-  background-color: #f1f1f1;
+/* Slides */
+.mySlides-testimony {
+  display: none;
+  padding: 80px;
   text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
   color: white;
 }
 
-/* Individual bars */
-.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
-.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
-.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
-.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
-
-/* Responsive layout - make the columns stack on top of each other instead of next to each other */
-@media (max-width: 400px) {
-  .side, .middle {
-    width: 100%;
-  }
-  .right {
-    display: none;
-  }
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
 }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+          
+
          </style>
   </head>
   <body>
@@ -551,25 +558,72 @@ function showSlides(n) {
 </div>
 </section>
 
-<section class="sect_color">
-  <h1>Our Happy Clients</h1>
-  <div class="row">
-  <div class="column2">
-    <p>"Their services are quite impressive. Fast deliverance like never before. hope to continue working with them.' I recommend all of you for fast and safety of your products deliverance."</p>
-    <img src="images/pic1.jpeg" alt="pic1" id="img"><br>Kyle Markus
+
+<section>
+  <!-- Slideshow container -->
+<div class="slideshow-container-testimony">
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides-testimony">
+    <h1>Our Happy Clients</h1>
+    <q><div class="">
+    <p>What a great service from Ride Safari, i begun to think why i didn't know you before. With quality services i received, strongly i w'd to recommend anyone to try their services. I promise you won't regreat.</p>
+  </div></q><img src="images/pic3.jpeg" alt="pic3" id="img"><br>Jason Myles
   </div>
 
-  <div class="column2">
-    <p>"What a great service from Ride Safari, i begun to think why i didn't know you before. With quality services i received, strongly i w'd to recommend anyone to try their services. I promise you won't regreat."</p>
-    <img src="images/pic3.jpeg" alt="pic3" id="img"><br>Priscilla Hoffman
+  <div class="mySlides-testimony">
+    <q><div class="">
+    <p>Their services are quite impressive. Fast deliverance like never before. hope to continue working with them.' I recommend all of you for fast and safety of your products deliverance.</p>
+  </div></q><img src="images/pic1.jpeg" alt="pic1" id="img"><br>Jason Myles
   </div>
 
-  <div class="column2">
-    <p>"If there is a logistic company i always dream to work with, Ride Safari is the one. For me, this is the best logistic company I have ever met. Dear everyone, try them in their services and thank me later."</p>
-    <img src="images/pic2.jpeg" alt="pic2" id="img"><br>Jason Myles
+  <div class="mySlides-testimony">
+    <q><div class="">
+    <p>If there is a logistic company i always dream to work with, Ride Safari is the one. For me, this is the best logistic company I have ever met. Dear everyone, try them in their services and thank me later.</p>
+  </div></q><img src="images/pic2.jpeg" alt="pic2" id="img"><br>Jason Myles
   </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 </section>
+
+<script type="text/javascript">
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides-testimony");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
 
 <section class="metrics-section">
   <h1>ACHIEVEMENTS</h1>
