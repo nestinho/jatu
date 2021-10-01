@@ -138,6 +138,44 @@
   height: 120px;
 }
 
+.bg-image {
+  /* The image used */
+  background-image: url(images/picha1.jpg);
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
 
          </style>
   </head>
@@ -164,10 +202,10 @@
     
   <main class="content">
 
-  <section style="background-image: url(images/picha1.jpg); background-size: cover;">
+  <section style="background-image: url(images/picha1.jpg); background-size: cover;" class="bg-image">
    <div class="row" id="about-one">
     <h1>ABOUT US</h1>
-    <p>Jenga Afya Tokomeza Umaskini (JATU) PLC is a Tanzanian company registered as a public company (Public Limited Company) which connects farmers and enables them to modernize and after the harvesting the company buys all the produce and later prepares the products that are sold to JATU members through the online network marketing (network marketing).</p>
+    <p class="bg-text">Jenga Afya Tokomeza Umaskini (JATU) PLC is a Tanzanian company registered as a public company (Public Limited Company) which connects farmers and enables them to modernize and after the harvesting the company buys all the produce and later prepares the products that are sold to JATU members through the online network marketing (network marketing).</p>
    </div>
  </section>
 

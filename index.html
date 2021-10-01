@@ -124,18 +124,81 @@
       box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     }
 
-    .* {
-  box-sizing: border-box;
-}
-
+ 
 /* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 5px;
+            .column {
+              float: left;
+              width: 25%;
+              padding: 0 5px;
+            }
+
+            .row {margin: 0 -5px;}
+
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 10px;
+              }
+            }
+
+            /* Style the counter cards */
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              padding: 16px;
+              text-align: center;
+              background-color: #f7d794;
+              color: black;
+            }
+
+            .fa-user, .fa-coffee, .fa-check, .fa-smile-o {
+              font-size:50px;
+              color: mediumseagreen;
+
+            }
+
+          
+
+
+
+          .heading {
+  font-size: 25px;
+  margin-right: 25px;
 }
 
-.row {margin: 0 -5px;}
+.fa-star {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -144,32 +207,30 @@
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
     width: 100%;
-    display: block;
-    margin-bottom: 10px;
+  }
+  .right {
+    display: none;
   }
 }
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f7d794;
-  color: black;
-}
-
-.fa-user, .fa-coffee, .fa-check, .fa-smile-o {
-  font-size:50px;
-  color: mediumseagreen;
-
-}
-
-
-
          </style>
   </head>
   <body>
@@ -546,6 +607,86 @@ function showSlides(n) {
       <p>Empoyees</p>
     </div>
   </div>
+</div>
+</section>
+
+<section class="user-rating">
+  <h1>USER RATING</h1>
+  <p align="center">Customer Satisfaction Is Our First Priority.</p>
+  <div class="row"> 
+
+  <div class="column3">
+    <img src="images/pic4.jpeg">
+  </div> 
+
+  <div class="column3">  
+    <span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+</div>
 </div>
 </section>
 
