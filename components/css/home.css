@@ -35,6 +35,12 @@
           height: 100%;
          }
 
+         .metrics-section {
+          border: 1px solid #73AD21;
+          padding: 10px;
+          margin: 15px;
+         }
+
          h1{
           text-align: center;
          }
