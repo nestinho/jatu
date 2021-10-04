@@ -90,6 +90,19 @@
   padding: 0 10px;
 }
 
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  height: 200px;
+  position: relative;
+}
 
          </style>
   </head>
@@ -256,13 +269,15 @@
 
    <section style="background-color: f1f1f1;">
     <div class="row">
-      <div class="column3">
+      <div class="column3" style="padding-left: 25px">
         <h1 style="font-size: 30px; text-align: left">Je, Wahitaji Bidhaa Yoyote Kutoka JATU na Uko Mbali Na Ofisi Zetu?<br>
         Wasiliana Nasi Sasa Tukuletee Bidhaa Yako.</h1>
       </div>
 
-      <div class="column3">
-        <div class="row" style="padding-right: 20px;"><a class="button-link-one" href="contact.html">CONTACT US</a></div>
+      <div class="column3 container">
+          <div class="center">
+            <a class="button-link-one" href="contact.html">CONTACT US</a>
+          </div>
     </div>
       </div>
     </div>
