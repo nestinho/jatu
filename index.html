@@ -179,7 +179,7 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev-testimony, .next-testimony {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -194,14 +194,14 @@
 }
 
 /* Position the "next button" to the right */
-.next {
+.next-testimony {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev-testimony:hover, .next-testimony:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
 }
@@ -585,8 +585,8 @@ function showSlides(n) {
   </div>
 
   <!-- Next/prev buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="prev-testimony" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next-testimony" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
 <!-- Dots/bullets/indicators -->
