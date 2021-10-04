@@ -1,16 +1,17 @@
       * {
         box-sizing: border-box;
+        max-width: 100%;
       }
 
-      * {
-        max-width: 100%;
+
+     .* {
+         box-sizing: border-box;
       }
 
       html {
         scroll-behavior: smooth;
       }
 
-      
        header{
           background-color: #fff;
           text-color: #ffa500;
@@ -324,10 +325,6 @@
                     width: 100%;
                   }
                 }
-
-                   .* {
-  box-sizing: border-box;
-}
 
             
                 /* Add a black background color to the top navigation */

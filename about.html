@@ -18,98 +18,8 @@
          <style type="text/css">
            * {box-sizing:border-box}
 
-    /* Slideshow container */
-    .slideshow-container {
-      width: 100%;
-      position: relative;
-      margin: auto;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-
-    /* Caption text */
-    .text {
-      color: #f2f2f2;
-      font-size: 25px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 30%;
-      width: 100%;
-      text-align: center;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-
-    .active, .dot:hover {
-      background-color: #717171;
-    }
-
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
-
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
+    
+    
 
     #img-one {
       border: 1px solid #ddd;
@@ -123,24 +33,19 @@
       box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     }
 
-
-.zoom {
-  padding: 50px;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
+    body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.zoom:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
-  width: 120px;
-  height: 120px;
+* {
+  box-sizing: border-box;
 }
 
 .bg-image {
   /* The image used */
-  background-image: url(images/picha1.jpg);
+  background-image: url("C:/Users/clavery/Documents/GitHub/jatu/images/banana.jpg");
   
   /* Add the blur effect */
   filter: blur(8px);
@@ -161,9 +66,9 @@
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
-  border: 3px solid #f1f1f1;
+  border: 3px solid #000;
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -171,6 +76,8 @@
   padding: 20px;
   text-align: center;
 }
+
+
 </style>
 </head>
 <body>
@@ -202,12 +109,22 @@
     
   <main class="content">
 
-  <section style="background-image: url(images/picha1.jpg); background-size: cover;" class="bg-image">
-   <div class="row" id="about-one">
+    <div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1 style="font-size:50px">ABOUT US</h1>
+  <p>Jenga Afya Tokomeza Umaskini (JATU) PLC is a Tanzanian company registered as a public company (Public Limited Company) which connects farmers and enables them to modernize and after the harvesting the company buys all the produce and later prepares the products that are sold to JATU members through the online network marketing (network marketing).</p>
+</div>
+
+<!--
+  <section class="about-section">
+    <div class="bg-image" style="background-image: url(images/picha1.jpg); background-size: cover;" >
+   <div class="row bg-text" id="about-one" >
     <h1>ABOUT US</h1>
-    <p class="bg-text">Jenga Afya Tokomeza Umaskini (JATU) PLC is a Tanzanian company registered as a public company (Public Limited Company) which connects farmers and enables them to modernize and after the harvesting the company buys all the produce and later prepares the products that are sold to JATU members through the online network marketing (network marketing).</p>
+    <p class="">Jenga Afya Tokomeza Umaskini (JATU) PLC is a Tanzanian company registered as a public company (Public Limited Company) which connects farmers and enables them to modernize and after the harvesting the company buys all the produce and later prepares the products that are sold to JATU members through the online network marketing (network marketing).</p>
    </div>
- </section>
+   </div>
+ </section> -->
 
  <section style="padding: 30px; background-color: #fff;">
    <div class="row"> 
