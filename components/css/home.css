@@ -155,11 +155,13 @@
           padding: 10px;
          }
 
-         #mission-statement {
+         div#mission-statement {
+          height: 35%;
           padding: 40px;
          }
 
-         #vision-statement {
+         div#vision-statement {
+          height: 35%;
           padding: 40px;
          }
 
