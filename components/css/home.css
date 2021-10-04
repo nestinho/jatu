@@ -6,6 +6,11 @@
         max-width: 100%;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
+      
        header{
           background-color: #fff;
           text-color: #ffa500;
